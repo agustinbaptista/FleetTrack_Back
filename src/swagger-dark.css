@@ -1,0 +1,108 @@
+:root {
+  --bg: #1f2430;
+  --bg-soft: #252b39;
+  --bg-panel: #2b3244;
+  --line: #3c455d;
+  --text: #e6edf7;
+  --text-dim: #b9c3d6;
+}
+
+body,
+.swagger-ui {
+  background: var(--bg) !important;
+  color: var(--text) !important;
+}
+
+.swagger-ui .topbar {
+  background: #171b25 !important;
+  border-bottom: 1px solid var(--line) !important;
+}
+
+.swagger-ui .scheme-container,
+.swagger-ui .info,
+.swagger-ui .opblock,
+.swagger-ui section.models,
+.swagger-ui .responses-inner,
+.swagger-ui .model-box {
+  background: var(--bg-soft) !important;
+  border-color: var(--line) !important;
+  color: var(--text) !important;
+  box-shadow: none !important;
+}
+
+.swagger-ui .opblock-section-header,
+.swagger-ui .responses-table thead tr th,
+.swagger-ui table thead tr th,
+.swagger-ui .tab li,
+.swagger-ui .parameters-col_description,
+.swagger-ui .response-col_description {
+  background: var(--bg-panel) !important;
+  color: var(--text) !important;
+}
+
+.swagger-ui table tbody tr td,
+.swagger-ui .responses-table tbody tr td {
+  color: var(--text) !important;
+  border-color: var(--line) !important;
+}
+
+.swagger-ui .info .title,
+.swagger-ui .opblock-tag,
+.swagger-ui .opblock-summary-path,
+.swagger-ui .parameter__name,
+.swagger-ui .parameter__type,
+.swagger-ui .response-col_status,
+.swagger-ui h1,
+.swagger-ui h2,
+.swagger-ui h3,
+.swagger-ui h4,
+.swagger-ui h5,
+.swagger-ui h6,
+.swagger-ui p,
+.swagger-ui label,
+.swagger-ui .model {
+  color: var(--text) !important;
+}
+
+.swagger-ui .parameter__in,
+.swagger-ui .model-title__text,
+.swagger-ui .renderedMarkdown p,
+.swagger-ui .markdown p {
+  color: var(--text-dim) !important;
+}
+
+.swagger-ui input,
+.swagger-ui textarea,
+.swagger-ui select {
+  background: #181d28 !important;
+  border: 1px solid var(--line) !important;
+  color: var(--text) !important;
+}
+
+.swagger-ui .highlight-code,
+.swagger-ui pre {
+  background: #181d28 !important;
+  color: var(--text) !important;
+}
+
+.swagger-ui .btn {
+  border-color: #55607b !important;
+  color: var(--text) !important;
+  background: #323b4f !important;
+}
+
+.swagger-ui .opblock.opblock-get {
+  background: rgba(97, 175, 239, 0.15) !important;
+}
+
+.swagger-ui .opblock.opblock-post {
+  background: rgba(152, 195, 121, 0.15) !important;
+}
+
+.swagger-ui .opblock.opblock-patch {
+  background: rgba(229, 192, 123, 0.15) !important;
+}
+
+.swagger-ui .opblock.opblock-delete {
+  background: rgba(224, 108, 117, 0.15) !important;
+}
