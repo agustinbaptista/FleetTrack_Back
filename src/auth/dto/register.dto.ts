@@ -3,16 +3,16 @@ import { IsEmail, IsEnum, IsOptional, IsString, MinLength } from 'class-validato
 import { Role } from '@/common/enums/role.enum';
 
 export class RegisterDto {
-  @ApiProperty()
+  @ApiProperty({ example: 'operador@tracking.com', description: 'Correo electrónico para el nuevo usuario' })
   @IsEmail()
   email!: string;
 
-  @ApiProperty()
+  @ApiProperty({ example: 'operator123', description: 'Contraseña (mínimo 6 caracteres)' })
   @IsString()
   @MinLength(6)
   password!: string;
 
-  @ApiProperty({ enum: Role, required: false })
+  @ApiProperty({ enum: Role, required: false, description: 'Rol opcional del usuario (por defecto asume USER si la lógica lo permite)' })
   @IsOptional()
   @IsEnum(Role)
   role?: Role;
