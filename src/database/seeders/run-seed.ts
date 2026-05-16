@@ -1,8 +1,8 @@
 import { DataSource } from 'typeorm';
 import * as bcrypt from 'bcryptjs';
 import dataSource from '../data-source';
-import { User } from '@/auth/user.entity';
-import { Role } from '@/common/enums/role.enum';
+import { User } from '../../auth/user.entity';
+import { Role } from '../../common/enums/role.enum';
 
 async function run(): Promise<void> {
   const db: DataSource = await dataSource.initialize();

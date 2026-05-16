@@ -3,10 +3,10 @@ import { InjectRepository } from '@nestjs/typeorm';
 import { Repository } from 'typeorm';
 import { Location } from './location.entity';
 import { CreateLocationDto } from './dto/create-location.dto';
-import { VehiclesService } from '@/vehicles/vehicles.service';
-import { RedisService } from '@/redis/redis.service';
-import { AlertsService } from '@/alerts/alerts.service';
-import { TrackingGateway } from '@/websocket/tracking.gateway';
+import { VehiclesService } from '../vehicles/vehicles.service';
+import { RedisService } from '../redis/redis.service';
+import { AlertsService } from '../alerts/alerts.service';
+import { TrackingGateway } from '../websocket/tracking.gateway';
 
 @Injectable()
 export class TrackingService {

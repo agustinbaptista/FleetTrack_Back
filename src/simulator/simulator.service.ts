@@ -1,9 +1,9 @@
 import { Injectable, OnModuleDestroy, OnModuleInit } from '@nestjs/common';
-import { TrackingService } from '@/tracking/tracking.service';
-import { VehiclesService } from '@/vehicles/vehicles.service';
-import { RedisService } from '@/redis/redis.service';
-import { TrackingGateway } from '@/websocket/tracking.gateway';
-import { AppLogger } from '@/common/logger/app-logger.service';
+import { TrackingService } from '../tracking/tracking.service';
+import { VehiclesService } from '../vehicles/vehicles.service';
+import { RedisService } from '../redis/redis.service';
+import { TrackingGateway } from '../websocket/tracking.gateway';
+import { AppLogger } from '../common/logger/app-logger.service';
 
 type SimVehicle = {
   vehicleId: string;

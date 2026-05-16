@@ -6,9 +6,9 @@ import {
 } from '@nestjs/websockets';
 import { Server, Socket } from 'socket.io';
 import { Injectable } from '@nestjs/common';
-import { AppLogger } from '@/common/logger/app-logger.service';
-import { Alert } from '@/alerts/alert.entity';
-import { Location } from '@/tracking/location.entity';
+import { AppLogger } from '../common/logger/app-logger.service';
+import { Alert } from '../alerts/alert.entity';
+import { Location } from '../tracking/location.entity';
 
 @Injectable()
 @WebSocketGateway({

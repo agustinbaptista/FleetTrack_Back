@@ -4,7 +4,7 @@
   "private": true,
   "description": "Backend NestJS para tracking de vehiculos en tiempo real",
   "scripts": {
-    "build": "nest build && tsc-alias",
+    "build": "nest build",
     "start": "node dist/main.js",
     "start:dev": "nest start --watch",
     "start:prod": "node dist/main.js",
@@ -55,7 +55,6 @@
     "eslint-config-prettier": "^9.1.0",
     "prettier": "^3.3.3",
     "ts-node": "^10.9.2",
-    "tsc-alias": "^1.8.10",
     "tsconfig-paths": "^4.2.0",
     "typescript": "^5.6.2"
   }

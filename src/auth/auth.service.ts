@@ -6,7 +6,7 @@ import { Repository } from 'typeorm';
 import { RegisterDto } from './dto/register.dto';
 import { LoginDto } from './dto/login.dto';
 import { User } from './user.entity';
-import { Role } from '@/common/enums/role.enum';
+import { Role } from '../common/enums/role.enum';
 
 @Injectable()
 export class AuthService {

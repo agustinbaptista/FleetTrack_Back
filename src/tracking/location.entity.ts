@@ -6,7 +6,7 @@ import {
   ManyToOne,
   PrimaryGeneratedColumn,
 } from 'typeorm';
-import { Vehicle } from '@/vehicles/vehicle.entity';
+import { Vehicle } from '../vehicles/vehicle.entity';
 
 @Entity('locations')
 @Index(['vehicleId', 'createdAt'])
